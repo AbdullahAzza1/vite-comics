@@ -3,21 +3,26 @@ export default {
     name: "AppHeader",
     data() {
         return {
-            menuLinks: [
+            gadgets: [
                 {
-                    src: "",
+                    src: "vite-project/src/assets/img/buy-comics-digital-comics.png",
+                    text: "digital comics"
                 },
                 {
-                    text: "comics",
+                    src: "vite-project/src/assets/img/buy-comics-merchandise.png",
+                    text: "dc merchandise"
                 },
                 {
-                    text: "movies",
+                    src: "vite-project/src/assets/img/buy-comics-shop-locator.png",
+                    text: "subscription"
                 },
                 {
-                    text: "tv",
+                    src: "vite-project/src/assets/img/buy-comics-subscriptions.png",
+                    text: "comic shop locator"
                 },
                 {
-                    text: "tv",
+                    src: "vite-project/src/assets/img/buy-comics-subscriptions.png",
+                    text: "dc power visa"
                 },
             ]
         }
@@ -34,7 +39,7 @@ export default {
             <div>content goes here</div>
         </div>
         <div class="content2">
-            <a v-for="gadget in gadgets" :href="link.url">{{ gadget.text }}</a>
+            <a v-for="gadget in gadgets" :href="gadget.url">{{ gadget.src }} {{ gadget.text }}</a>
         </div>
     </main>
 </template>
@@ -45,6 +50,14 @@ export default {
     background-color: black;
     color: white;
     display: flex;
+    align-items: center;
+}
+
+.content2 {
+    height: 13rem;
+    background-color: rgb(34, 78, 111);
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 </style>
