@@ -71,18 +71,18 @@ const comics = [
         price: "$16.99",
         series: "Catwoman",
         type: "graphic novel",
-    },
-],
-    comics.forEach((comic, i) => {
-        console.log(comic, i);
-        let fumetti = document.getElementById("fumetti");
+    }
+]
+comics.forEach((comic, i) => {
+    console.log(comic, i);
+    let fumetti = document.getElementById("fumetti");
 
-        let postTemplate = `<div> ${comic.thumb} </div>
+    let comicTemplate = `<div> ${comic.thumb} </div>
                 <p> ${comic.series} </p>`;
 
-        fumetti.innerHTML += postTemplate;
+    fumetti.innerHTML += comicTemplate;
 
-    });
+});
 
 </script>
 
