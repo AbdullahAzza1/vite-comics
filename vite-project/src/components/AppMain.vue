@@ -5,23 +5,23 @@ export default {
         return {
             gadgets: [
                 {
-                    src: "/public/img/buy-comics-digital-comics.png",
+                    src: "/img/buy-comics-digital-comics.png",
                     text: "digital comics"
                 },
                 {
-                    src: "vite-project/src/assets/img/buy-comics-merchandise.png",
+                    src: "/img/buy-comics-merchandise.png",
                     text: "dc merchandise"
                 },
                 {
-                    src: "vite-project/src/assets/img/buy-comics-shop-locator.png",
+                    src: "/buy-comics-shop-locator.png",
                     text: "subscription"
                 },
                 {
-                    src: "vite-project/src/assets/img/buy-comics-subscriptions.png",
+                    src: "/img/buy-comics-subscriptions.png",
                     text: "comic shop locator"
                 },
                 {
-                    src: "vite-project/src/assets/img/buy-comics-subscriptions.png",
+                    src: "/img/buy-comics-subscriptions.png",
                     text: "dc power visa"
                 },
             ]
@@ -39,7 +39,8 @@ export default {
             <div>content goes here</div>
         </div>
         <div class="content2">
-            <a v-for="gadget in gadgets" :href="gadget.url">{{ gadget.src }} {{ gadget.text }}</a>
+            <img :src="getImagePath(gadgets)" />
+            <a v-for="gadget in gadgets" :href="gadget.url" :src="getImagePath(gadgets.src)">{{ gadget.text }}</a>
         </div>
     </main>
 </template>
@@ -47,7 +48,7 @@ export default {
 <style scoped>
 .content {
     height: 10rem;
-    background-color: black;
+    background-color: rgb(10, 6, 79);
     color: white;
     display: flex;
     align-items: center;

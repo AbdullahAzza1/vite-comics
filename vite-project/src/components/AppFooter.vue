@@ -43,18 +43,18 @@
                 </div>
             </div>
             <div>
-                <img class="bgFooter" src="../assets/img/dc-logo-bg.png" alt="">
+                <img class="bgFooter" src="/img/dc-logo-bg.png" alt="">
             </div>
         </div>
         <div class="BassFooter">
             <button>kasuhf</button>
             <div class="community">
                 <div>FOLLOW US</div>
-                <img src="../assets/img/footer-facebook.png" alt="">
-                <img src="../assets/img/footer-periscope.png" alt="">
-                <img src="../assets/img/footer-pinterest.png" alt="">
-                <img src="../assets/img/footer-twitter.png" alt="">
-                <img src="../assets/img/footer-youtube.png" alt="">
+                <img src="/img/footer-facebook.png" alt="">
+                <img src="/img/footer-periscope.png" alt="">
+                <img src="/img/footer-pinterest.png" alt="">
+                <img src="/img/footer-twitter.png" alt="">
+                <img src="/img/footer-youtube.png" alt="">
             </div>
         </div>
     </footer>
@@ -63,7 +63,7 @@
 <style scoped>
 .footer {
     display: flex;
-    background-image: url(../assets/img/footer-bg.jpg);
+    background-image: url(/img/footer-bg.jpg);
     height: 30rem;
     color: white;
     justify-content: space-between;
@@ -91,7 +91,7 @@ div {
 }
 
 .bgFooter {
-    width: 40%;
+    width: 100%;
     background-size: cover;
     background-position: center;
 }

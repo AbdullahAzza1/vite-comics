@@ -56,7 +56,7 @@ export default {
 <template>
     <header>
         <nav>
-            <img src="../assets/img/dc-logo.png" alt="">
+            <img src="/img/dc-logo.png" alt="">
             <div>
                 <a v-for="link in menuLinks" :href="link.url">{{ link.text }}</a>
             </div>
