@@ -43,7 +43,7 @@
                 </div>
             </div>
             <div>
-                <img src="../assets/img/dc-logo-bg.png" alt="">
+                <img class="bgFooter" src="../assets/img/dc-logo-bg.png" alt="">
             </div>
         </div>
         <div class="BassFooter">
@@ -88,5 +88,11 @@ div {
 .community {
     display: flex;
     align-items: center;
+}
+
+.bgFooter {
+    width: 40%;
+    background-size: cover;
+    background-position: center;
 }
 </style>

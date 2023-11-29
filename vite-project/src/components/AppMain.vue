@@ -5,7 +5,7 @@ export default {
         return {
             gadgets: [
                 {
-                    src: "vite-project/src/assets/img/buy-comics-digital-comics.png",
+                    src: "/assets/img/buy-comics-digital-comics.png",
                     text: "digital comics"
                 },
                 {
