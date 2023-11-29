@@ -5,7 +5,7 @@ export default {
         return {
             gadgets: [
                 {
-                    src: "/assets/img/buy-comics-digital-comics.png",
+                    src: "/public/img/buy-comics-digital-comics.png",
                     text: "digital comics"
                 },
                 {
