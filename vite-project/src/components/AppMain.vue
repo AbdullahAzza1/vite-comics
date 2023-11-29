@@ -77,7 +77,7 @@ comics.forEach((comic, i) => {
     console.log(comic, i);
     let fumetti = document.getElementById("fumetti");
 
-    let comicTemplate = `<div> ${comic.thumb} </div>
+    let comicTemplate = `<img src="${comic.thumb}" alt="">
                 <p> ${comic.series} </p>`;
 
     fumetti.innerHTML += comicTemplate;
