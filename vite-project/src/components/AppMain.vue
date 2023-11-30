@@ -1,4 +1,6 @@
 <script>
+import AppCard from './AppCard.vue';
+
 export default {
     data() {
         return {
@@ -16,7 +18,7 @@ export default {
                     type: "comic book",
                 },
                 {
-                    thumb: "https://media.wired.com/photos/593384dad80dd005b42b2817/master/w_2560%2Cc_limit/Aquaman-16.jpg",
+                    thumb: "https://media.wired.com/photos/593384dad80dd005b42b2817/master/w_2560,c_limit/Aquaman-16.jpg",
                     price: "$16.99",
                     series: "Aquaman",
                     type: "graphic novel",
@@ -76,8 +78,9 @@ export default {
                     type: "graphic novel",
                 }
             ]
-        }
-    }
+        };
+    },
+
 }
 </script>
 
@@ -89,11 +92,11 @@ export default {
             </div>
             <div>CURRENT SERIES</div>
             <div class="fumetti">
-
+                <AppCard :titolo="fumetto.series" :image="fumetto.thumb" v-for="fumetto in " />
             </div>
         </div>
         <div class="content2">
-            <a v-for="brands in gadget" :href="gadget.url">{{ gadget.text }}</a>
+            <!-- <a v-for="brands in gadget" :href="gadget.url">{{ gadget.text }}</a> -->
         </div>
     </main>
 </template>

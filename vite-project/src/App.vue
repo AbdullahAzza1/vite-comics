@@ -2,12 +2,14 @@
 import AppHeader from './components/AppHeader.vue'
 import AppMain from './components/AppMain.vue'
 import AppFooter from './components/AppFooter.vue'
+import AppCard from './components/AppCard.vue'
 
 export default {
   components: {
     AppHeader,
     AppMain,
-    AppFooter
+    AppFooter,
+    AppCard
   },
   data() {
     return {
@@ -62,7 +64,7 @@ export default {
 <template>
   <AppHeader :links="menuLinks" />
 
-  <AppMain :gadget="gadgets" />
+  <AppMain />
   <AppFooter />
 </template>
 
