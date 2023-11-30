@@ -2,6 +2,7 @@
 import AppCard from './AppCard.vue';
 
 export default {
+    name: "AppMain",
     data() {
         return {
             comics: [
@@ -92,7 +93,7 @@ export default {
             </div>
             <div>CURRENT SERIES</div>
             <div class="fumetti">
-                <AppCard :titolo="fumetto.series" :image="fumetto.thumb" v-for="fumetto in " />
+                <AppCard :titolo="fumetto.series" :image="fumetto.thumb" v-for="fumetto in comics" />
             </div>
         </div>
         <div class="content2">
